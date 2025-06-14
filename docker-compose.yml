@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    build: .
+    ports:
+      - "8080:80"
+  todo:
+    image: docker.io/amir20/dozzle:latest
+    ports:
+      - "8081:8080"
